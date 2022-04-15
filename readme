@@ -1,8 +1,8 @@
 Jacob Drew
 CS 4760
-Project Three
+Project Four
 
-Version Control: https://github.com/jdrew00/4760-project3
+Version Control: https://github.com/jdrew00/4760-project4
 
 Description: process scheduling simulator
 
@@ -12,3 +12,18 @@ How to run program:
 n number of slave processes to execute
 If n is over 18 it will be set to 18 for safety
 
+Whats working:
+- clock in shared memory
+- PCB struct defined
+- message queue between child and OSS
+- printing to log file
+
+Issues:
+- couldn't get shared memory for PCB working
+- couldn't figure out scheduling algorithms
+- couldn't get queues working
+- couldn't get statistics working
+
+Starving algorithm:
+- My aging algorihtm would probably work by giving all the queues a time quantum so
+if a process hadn't been ran recently it would get pushed to the front of the queue
